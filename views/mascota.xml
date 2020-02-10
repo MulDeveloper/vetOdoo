@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <act_window id="vet_mascotas_action" name="apps" res_model="vet.mascotas" />
+
+        <menuitem name="Inicio" id="menu_inicio" sequence="10"/>
+
+        <menuitem name="mascotas" id="menu_mascotas" action="vet_mascotas_action" parent="menu_inicio" sequence="17"/>
+
+        <record id="vet_mascotas_view_tree" model="ir.ui.view">
+            <field name="name">Mascotas</field>
+            <field name="model">vet.mascotas</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="idMascota" />
+                    <field name="nombre" />
+                    <field name="cliente" />
+                    <field name="raza" />
+                    <field name="edad" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="vet_mascotas_view_form" model="ir.ui.view">
+            <field name="name">Formulario de Mascotas</field>
+            <field name="model">vet.mascotas</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="idMascota" />
+                        <field name="nombre" />
+                        <field name="cliente" />
+                        <field name="raza" />
+                        <field name="edad" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="vet_mascotas_view_search" model="ir.ui.view">
+            <field name="name">Busqueda de Mascotas</field>
+            <field name="model">vet.mascotas</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="nombre" />
+                    <field name="cliente" />
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo>

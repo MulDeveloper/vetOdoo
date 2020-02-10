@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <act_window id="vet_cliente_action" name="clientes"
+                     res_model="vet_clientes" />
+
+         <menuitem name="clientes" id="menu_clientes" action="vet_cliente_action" parent="menu_inicio" sequence="17"/>
+
+
+        <record id="vet_cliente_view_tree" model="ir.ui.view">
+            <field name="name">Clientes</field>
+            <field name="model">vet.clientes</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre" />
+                    <field name="telefono" />
+                    <field name="direccion" />
+                    <field name="nif" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="vet_cliente_view_form" model="ir.ui.view">
+            <field name="name">Formulario de clientes</field>
+            <field name="model">vet.clientes</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="nombre" />
+                        <field name="telefono" />
+                        <field name="direccion" />
+                        <field name="nif" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="vet_cliente_view_search" model="ir.ui.view">
+            <field name="name">Busqueda clientes</field>
+            <field name="model">vet.clientes</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="nif" />
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo>
