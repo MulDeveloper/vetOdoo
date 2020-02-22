@@ -2,7 +2,7 @@
 <odoo>
     <data>
         <act_window id="vet_consulta_action" name="consultas"
-                     res_model="vet_consultas" />
+                     res_model="vet.consultas" />
 
          <menuitem name="consultas" id="menu_consultas" action="vet_consulta_action" parent="menu_inicio" sequence="17"/>
 
