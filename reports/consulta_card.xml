@@ -5,13 +5,28 @@
             <t t-foreach="docs" t-as="cons">
                 <t t-call="web.external_layout">
                     <h1>Consulta:</h1>
-                    <t t-esc="cons.nombreClinica"/>
-                    <t t-esc="cons.cliente.nombre"/>
-                    <t t-esc="cons.mascota.nombre"/>
-                    <t t-esc="cons.fecha"/>
-                    <t t-esc="cons.descripcion"/>
-                    <t t-esc="cons.total"/>
-                    <t t-esc="cons.totalIva"/>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Clinica</td>
+                                <td>Cliente</td>
+                                <td>Mascota</td>
+                                <td>Fecha</td>
+                                <td>Descpricion</td>
+                                <td>Total</td>
+                                <td>TotalIva</td>
+                            </tr>
+                            <tr>
+                                <td><t t-esc="cons.nombreClinica"/></td>
+                                <td><t t-esc="cons.cliente.nombre"/></td>
+                                <td><t t-esc="cons.mascota.nombre"/></td>
+                                <td><t t-esc="cons.fecha"/></td>
+                                <td><t t-esc="cons.descripcion"/></td>
+                                <td><t t-esc="cons.total"/></td>
+                                <td><t t-esc="cons.totalIva"/></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </t>
             </t>
         </t>
