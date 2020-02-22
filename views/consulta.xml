@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <act_window id="vet_consulta_action" name="consultas"
+                     res_model="vet_consultas" />
+
+         <menuitem name="consultas" id="menu_consultas" action="vet_consulta_action" parent="menu_inicio" sequence="17"/>
+
+
+        <record id="vet_consulta_view_tree" model="ir.ui.view">
+            <field name="name">Consultas</field>
+            <field name="model">vet.consultas</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombreClinica" />
+                    <field name="cliente" />
+                    <field name="mascota" />
+                    <field name="fecha" />
+                    <field name="descripcion" />
+                    <field name="total" />
+                    <field name="totalIva" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="vet_consulta_view_form" model="ir.ui.view">
+            <field name="name">Formulario de consultas</field>
+            <field name="model">vet.consultas</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="nombreClinica" />
+                        <field name="cliente" />
+                        <field name="mascota" />
+                        <field name="fecha" />
+                        <field name="descripcion" />
+                        <field name="total" />
+                        <field name="totalIva" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

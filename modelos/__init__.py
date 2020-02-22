@@ -1,1 +1,1 @@
-from . import Mascota,Cliente
+from . import Mascota,Cliente,Consulta
