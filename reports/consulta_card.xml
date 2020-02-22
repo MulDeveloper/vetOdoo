@@ -6,8 +6,8 @@
                 <t t-call="web.external_layout">
                     <h1>Consulta:</h1>
                     <t t-esc="cons.nombreClinica"/>
-                    <t t-esc="cons.cliente"/>
-                    <t t-esc="cons.mascota"/>
+                    <t t-esc="cons.cliente.nombre"/>
+                    <t t-esc="cons.mascota.nombre"/>
                     <t t-esc="cons.fecha"/>
                     <t t-esc="cons.descripcion"/>
                     <t t-esc="cons.total"/>
