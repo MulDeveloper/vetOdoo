@@ -5,7 +5,7 @@
             <t t-foreach="docs" t-as="cons">
                 <t t-call="web.external_layout">
                     <h1>Consulta:</h1>
-                    <table>
+                    <table border="2" cellspacing="5">
                         <tbody>
                             <tr>
                                 <td>Clinica</td>
