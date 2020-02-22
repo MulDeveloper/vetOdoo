@@ -4,7 +4,7 @@ class Consulta(models.Model):
 	_name = 'vet.consultas'
 	nombreClinica = fields.Char('Clinica',required=True,default="Clinica colon")
 	cliente = fields.Many2one('vet.clientes', 'Cliente')
-	mascota = fields.Many2one('vet.mascotas', 'Mascota')
+	mascota = fields.One2Many('vet.mascotas', 'Mascota')
 	fecha = fields.Date('Fecha', required=True)
 	descripcion = fields.Text('Descripcion', required=True)
 	total = fields.Float('Total', required=True)
