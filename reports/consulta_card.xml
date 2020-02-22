@@ -5,15 +5,15 @@
             <t t-foreach="docs" t-as="cons">
                 <t t-call="web.external_layout">
                     <h1>Consulta:</h1>
-                    <table border="2" cellspacing="5">
+                    <table border="2">
                             <tr>
-                                <td>Clinica</td>
-                                <td>Cliente</td>
-                                <td>Mascota</td>
-                                <td>Fecha</td>
-                                <td>Descpricion</td>
-                                <td>Total</td>
-                                <td>TotalIva</td>
+                                <td padding="5">Clinica</td>
+                                <td padding="5">Cliente</td>
+                                <td padding="5">Mascota</td>
+                                <td padding="5">Fecha</td>
+                                <td padding="5">Descpricion</td>
+                                <td padding="5">Total</td>
+                                <td padding="5">TotalIva</td>
                             </tr>
                             <tr>
                                 <td><t t-esc="cons.nombreClinica"/></td>
