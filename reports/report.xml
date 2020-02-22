@@ -7,5 +7,5 @@
         report_type="qweb-pdf"
         name="vetOdoo.report_consulta"
         file="vetOdoo.report_consulta"
-    />
+    />    
 </odoo>

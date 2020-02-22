@@ -2,9 +2,10 @@
 <odoo>
     <template id="report_consulta">
         <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="cons">
+                <t t-call="web.external_layout">
                     <h1>Consulta:</h1>
                     <table border="2" cellspacing="5">
-                        <t t-foreach="docs" t-as="cons">
                             <tr>
                                 <td>Clinica</td>
                                 <td>Cliente</td>
@@ -23,8 +24,9 @@
                                 <td><t t-esc="cons.total"/></td>
                                 <td><t t-esc="cons.totalIva"/></td>
                             </tr>
-                        </t>
                     </table>
                 </t>
+            </t>
+        </t>
     </template>
 </odoo>
