@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="report_consulta">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="cons">
+                <t t-call="web.external_layout">
+                    <h1>Consulta:</h1>
+                    <t t-esc="cons.nombreClinica"/>
+                    <t t-esc="cons.cliente"/>
+                    <t t-esc="cons.mascota"/>
+                    <t t-esc="cons.fecha"/>
+                    <t t-esc="cons.descripcion"/>
+                    <t t-esc="cons.total"/>
+                    <t t-esc="cons.totalIva"/>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>
