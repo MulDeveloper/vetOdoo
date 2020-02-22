@@ -12,5 +12,5 @@ class Mascota(models.Model):
 		res=[]
 		for record in self:
 			name = record.nombre
-			res.append((record.cliente, name))
+			res.append((record.idMascota, name))
 		return res
