@@ -6,7 +6,7 @@ class Consulta(models.Model):
 	cliente = fields.Many2one('vet.clientes', 'Cliente')
 	mascota = fields.Many2one('vet.mascotas', 'Mascota')
 	fecha = fields.Date('Fecha', required=True)
-	descripcion = fields.Char('Descripcion', required=True)
+	descripcion = fields.Text('Descripcion', required=True)
 	total = fields.Float('Total', required=True)
 	totalIva = fields.Float(string='Total IVA', compute='calculoTotal')
 

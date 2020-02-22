@@ -7,3 +7,10 @@ class Mascota(models.Model):
 	cliente = fields.Many2one('vet.clientes', 'Cliente')
 	raza = fields.Char('Raza animal', required=True)
 	edad = fields.Integer('Edad', required=True)
+
+	def name_get(self):
+		res=[]
+		for record in self:
+			name = record.nombre
+			res.append((record.id, record.cliente, name))
+		return res
