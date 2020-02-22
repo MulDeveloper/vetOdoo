@@ -6,7 +6,6 @@
                 <t t-call="web.external_layout">
                     <h1>Consulta:</h1>
                     <table border="2" cellspacing="5">
-                        <tbody>
                             <tr>
                                 <td>Clinica</td>
                                 <td>Cliente</td>
@@ -25,7 +24,6 @@
                                 <td><t t-esc="cons.total"/></td>
                                 <td><t t-esc="cons.totalIva"/></td>
                             </tr>
-                        </tbody>
                     </table>
                 </t>
             </t>
