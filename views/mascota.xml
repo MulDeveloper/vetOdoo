@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <data>
-        <act_window id="vet_mascotas_action" name="apps" res_model="vet.mascotas" />
+        <act_window id="vet_mascotas_action" name="Mascotas" res_model="vet.mascotas" />
 
         <menuitem name="mascotas" id="menu_mascotas" action="vet_mascotas_action" parent="menu_inicio" sequence="17"/>
 
