@@ -11,6 +11,7 @@
             <field name="arch" type="xml">
                 <tree>
                     <field name="idMascota" />
+                    <field name="foto" />
                     <field name="nombre" />
                     <field name="cliente" />
                     <field name="raza" />
@@ -26,6 +27,7 @@
                 <form>
                     <group>
                         <field name="idMascota" />
+                        <field name="foto" />
                         <field name="nombre" />
                         <field name="cliente" />
                         <field name="raza" />

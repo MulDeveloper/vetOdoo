@@ -3,6 +3,7 @@ from odoo import models, fields, api
 class Mascota(models.Model):
 	_name = 'vet.mascotas'
 	idMascota = fields.Integer('ID', required=True)
+	foto = fields.Binary('Foto')
 	nombre = fields.Char('Nombre mascota', required=True)
 	cliente = fields.Many2one('vet.clientes', 'Cliente')
 	raza = fields.Char('Raza animal', required=True)
